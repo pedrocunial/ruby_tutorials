@@ -1,0 +1,8 @@
+<h1>Welcome#sample</h1>
+<%= "Message from controller: #{@controller_message}"%>
+<!-- we could very well omit the :controller part since we are on the same one -->
+<%= link_to("Go to index",
+            {:controller => "welcome",
+             :action     => "index",
+             :id         => 5,
+             :random     => "Lula preso amanhã"}) %>

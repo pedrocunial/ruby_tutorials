@@ -1,0 +1,19 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%# counting to 10 %>
+<%= "Counting to ten!" %>
+<br/>
+<% for i in (0..10)%>
+    <% if (i % 2 == 0) %>
+        <%= "#{i} is even!" %>
+    <% else %>
+        <%= "#{i} is not even!"%>
+    <% end %>
+    <br/>
+<% end %>
+
+<% if (params.has_key?(:id) && params.has_key?(:random))%>
+    <br>
+    <%= "Have you heard? #{params[:random]}"  %>
+<% end %>
